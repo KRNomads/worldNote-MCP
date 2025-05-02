@@ -1,10 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { getBasicInfoTool } from "./getBasicInfoTool.js";
-import { getCharcterInfoTool } from "./getCharcterInfoTool.js";
-import { getWorldInfoTool } from "./getWorldInfoTool.js";
+import { makeCharacterTool } from "./makeCharacterTool.js";
+import { makeWorldDetailsTool } from "./makeWorldDetailsTool.js";
 
 export function registerAllTools(server: McpServer) {
-  getBasicInfoTool(server);
-  getCharcterInfoTool(server);
-  getWorldInfoTool(server);
+  makeCharacterTool(server);
+  makeWorldDetailsTool(server);
 }
