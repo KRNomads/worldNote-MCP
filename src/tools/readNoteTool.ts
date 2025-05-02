@@ -13,7 +13,7 @@ const agent = new https.Agent({
   rejectUnauthorized: false, // 인증서 검증을 하지 않음
 });
 
-export function makeCharacterTool(server: McpServer) {
+export function readNoteTool(server: McpServer) {
   // 캐릭터 생성 툴
   server.tool(
     "read_note",
